@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-sans: var(--font-sans);
+  --font-family-display: var(--font-display);
+  --color-primary: var(--color-sky-500);
+  --color-default: var(--color-zinc-800);
+  --color-mute: var(--color-zinc-500);
+}
+
+a {
+  @apply hover:text-primary decoration-mute hover:decoration-primary underline-offset-2 transition;
+}
+
+.shadow {
+  @apply shadow-[4px_4px_0_#00000010];
+}
+
+::selection {
+  @apply bg-primary text-white shadow;
+}
