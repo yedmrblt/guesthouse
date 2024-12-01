@@ -1,5 +1,5 @@
 {
-  "name": "ademilter-website",
+  "name": "emredemirbulut-guesthouse",
   "description": "my personal website",
   "version": "1.5.0",
   "author": {
@@ -14,10 +14,6 @@
   },
   "dependencies": {
     "@tabler/icons-react": "^2.47.0",
-    "@upstash/claps": "^1.0.0-beta.4",
-    "@upstash/qstash": "^2.7.14",
-    "@upstash/redis": "^1.34.3",
-    "@upstash/vector": "^1.1.7",
     "clsx": "^2.1.1",
     "comma-number": "^2.1.0",
     "date-fns": "^2.30.0",
