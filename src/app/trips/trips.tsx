@@ -1,11 +1,12 @@
 import { PlusCircleIcon } from "lucide-react";
-import { allTrips, Trip } from "@content";
+import { Trip } from "@content";
+import { tripsSortedByDate } from "./sorted";
 import TripItem from "@/components/trip-item";
 
 export default function Trips() {
   return (
     <div className="flex flex-col items-stretch gap-12">
-      {allTrips.map((trip: Trip) => {
+      {tripsSortedByDate.map((trip: Trip) => {
         return (
           <div
             className="flex flex-col items-start gap-6 md:flex-row md:gap-12"
