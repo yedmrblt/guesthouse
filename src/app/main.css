@@ -9,7 +9,7 @@
 }
 
 a {
-  @apply hover:text-primary decoration-mute hover:decoration-primary underline-offset-2 transition;
+  @apply decoration-mute hover:decoration-primary underline-offset-2 transition hover:text-orange-600;
 }
 
 .shadow {
