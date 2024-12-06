@@ -5,6 +5,7 @@ import { Inter, Inter_Tight } from "next/font/google";
 import Header from "@/components/header";
 import cx from "@/lib/cx";
 import { META } from "@/lib/meta";
+import { Analytics } from "@vercel/analytics/next";
 
 const fontText = Inter({
   variable: "--font-sans",
@@ -45,6 +46,7 @@ export default function RootLayout({
       <body className="text-default min-h-screen bg-zinc-100 pb-24 text-sm antialiased sm:text-base">
         <Header />
         <main className="mt-10 sm:mt-16">{children}</main>
+        <Analytics />
       </body>
     </html>
   );
