@@ -7,3 +7,9 @@ export interface ITripItem {
   summary: String;
   images: { src: string; alt: string }[];
 }
+
+export interface IBook {
+  coverSrc: string;
+  name: string;
+  status: "read" | "reading" | "to-read";
+}

@@ -10,6 +10,7 @@ import { IconSelector } from "@tabler/icons-react";
 export const MENU = {
   "/": "About me",
   "/trips": "Trips",
+  "/readings": "Readings",
 };
 
 export default function Header() {
