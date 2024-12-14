@@ -1,6 +1,6 @@
 "use client";
 
-import ButtonAppStore from "./button-app-store";
+import ButtonGumroad from "./button-gumroad";
 
 export default function Hero() {
   return (
@@ -28,7 +28,7 @@ export default function Hero() {
         </span>
       </h1>
       <div className="mt-12 flex flex-col items-start space-y-6 delay-700 sm:flex-row sm:items-center sm:space-y-0 sm:space-x-7">
-        <ButtonAppStore dark />
+        <ButtonGumroad />
       </div>
     </section>
   );
