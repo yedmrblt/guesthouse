@@ -27,8 +27,20 @@ export default function Hero() {
           </mark>
         </span>
       </h1>
-      <div className="mt-12 flex flex-col items-start space-y-6 delay-700 sm:flex-row sm:items-center sm:space-y-0 sm:space-x-7">
+      <div className="mt-12 flex flex-col items-center space-y-6 delay-700 sm:flex-row sm:items-center sm:space-y-0 sm:space-x-7">
         <ButtonGumroad />
+        <a
+          href="https://www.producthunt.com/posts/pulse-for-vercel?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-pulse&#0045;for&#0045;vercel"
+          target="_blank"
+        >
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=704382&theme=light"
+            alt="Pulse&#0032;for&#0032;Vercel - Monitor&#0032;Vercel&#0032;deployments&#0032;on&#0032;your&#0032;Mac | Product Hunt"
+            style={{ width: "250px", height: "54px" }}
+            width="250"
+            height="54"
+          />
+        </a>
       </div>
     </section>
   );
