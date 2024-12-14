@@ -12,7 +12,7 @@ export default function Desktop() {
         <picture>
           <img
             className="aspect-video h-96 w-full object-cover blur select-none sm:h-auto sm:blur-none"
-            src="https://cdn.tryalcove.com/images/wallpaper.jpg"
+            src="/pulse-for-vercel/wallpaper.webp"
             alt="Wallpaper"
           />
         </picture>
