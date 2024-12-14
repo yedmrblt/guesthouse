@@ -11,6 +11,7 @@ export const MENU = {
   "/": "About me",
   "/trips": "Trips",
   "/readings": "Readings",
+  "/pulse-for-vercel": "Pulse for Vercel",
 };
 
 export default function Header() {

@@ -45,7 +45,7 @@ export default function RootLayout({
     >
       <body className="text-default min-h-screen bg-zinc-100 pb-24 text-sm antialiased sm:text-base">
         <Header />
-        <main className="mt-10 sm:mt-16">{children}</main>
+        <main className={`mt-10 sm:mt-16`}>{children}</main>
         <Analytics />
       </body>
     </html>
