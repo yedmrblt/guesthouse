@@ -2,7 +2,7 @@ import Container from "@/components/container";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pulse for Vercel - Privacy Policy",
+  title: "Deplog - Privacy Policy",
   description: "Monitor Vercel deployments real-time on your Mac menu bar.",
 };
 
@@ -14,7 +14,7 @@ export default function PulseForVercel() {
           Privacy policy
         </h1>
         <p className="my-10">
-          No data or personal information is collected by Pulse for Vercel.
+          No data or personal information is collected by Deplog.
         </p>
         <div className="space-y-2">
           <h2 className="text-2xl font-bold">Have questions?</h2>

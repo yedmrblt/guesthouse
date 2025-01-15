@@ -3,7 +3,7 @@ import ButtonGumroad from "@/components/button-gumroad";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pulse for Vercel",
+  title: "Deplog",
   description: "Monitor Vercel deployments real-time on your Mac menu bar.",
 };
 
@@ -37,14 +37,14 @@ export default function PulseForVercel() {
           <ButtonGumroad></ButtonGumroad>
         </div>
         <img
-          src="/pulse-for-vercel/pulse.gif"
-          alt="An animated gif shows how pulse for vercel app works"
+          src="/deplog/pulse.gif"
+          alt="An animated gif shows how Deplog app works"
           className="mt-12 rounded-2xl shadow-xl"
         />
         <p className="mt-12 text-lg">
           Monitor your Vercel deployments real-time on your Mac—no need to open
-          the web app! With Pulse for Vercel, all your deployment updates are
-          just one click away, right from your Mac’s menu bar.
+          the web app! With Deplog, all your deployment updates are just one
+          click away, right from your Mac’s menu bar.
         </p>
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2">
           <div className="group flex flex-col items-center justify-center rounded-2xl bg-lime-200 py-8 text-center">
