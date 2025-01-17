@@ -1,5 +1,5 @@
 import Container from "@/components/container";
-import ButtonGumroad from "@/components/button-gumroad";
+import ButtonAppStore from "@/components/button-appstore";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function PulseForVercel() {
           </span>
         </h1>
         <div className="mt-12 flex items-center justify-start">
-          <ButtonGumroad></ButtonGumroad>
+          <ButtonAppStore></ButtonAppStore>
         </div>
         <img
           src="/deplog/pulse.gif"
@@ -193,7 +193,7 @@ export default function PulseForVercel() {
           </ul>
         </div>
         <div className="mt-12 flex items-center justify-center">
-          <ButtonGumroad></ButtonGumroad>
+          <ButtonAppStore></ButtonAppStore>
         </div>
       </Container>
     </>
