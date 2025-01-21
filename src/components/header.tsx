@@ -27,7 +27,14 @@ export default function Header() {
   return (
     <header className="pt-6">
       <Container>
-        <nav className={cx(isNavOpen ? "flex" : "hidden", "flex-col gap-4")}>
+        <nav
+          className={cx(
+            isNavOpen
+              ? "flex"
+              : "hidden auto-cols-max sm:grid sm:grid-flow-col sm:gap-8",
+            "flex-col gap-4",
+          )}
+        >
           {Object.entries(MENU).map(([key, value]) => {
             const isActive = key === path;
             return (
@@ -35,8 +42,8 @@ export default function Header() {
                 key={key}
                 href={key}
                 className={cx(
-                  "grow hover:opacity-100",
-                  isActive ? "text-mute !no-underline" : "",
+                  "hover:opacity-100",
+                  isActive ? "text-orange-500 !no-underline" : "",
                 )}
               >
                 {value}
@@ -48,7 +55,7 @@ export default function Header() {
         {!isNavOpen && (
           <button
             type="button"
-            className="flex items-center gap-1 opacity-60 select-none"
+            className="flex items-center gap-1 opacity-60 select-none sm:hidden"
             onClick={() => {
               setIsNavOpen(true);
             }}
