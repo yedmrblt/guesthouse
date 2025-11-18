@@ -1,11 +1,9 @@
 "use client";
 
 import NextLink from "next/link";
-import { useEffect, useState } from "react";
 import cx from "@/lib/cx";
 import Container from "./container";
-import { usePathname, useSelectedLayoutSegment } from "next/navigation";
-import { IconSelector } from "@tabler/icons-react";
+import { useSelectedLayoutSegment } from "next/navigation";
 
 export const MENU = {
   "/": "About me",
@@ -15,25 +13,15 @@ export const MENU = {
 };
 
 export default function Header() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
   const segment = useSelectedLayoutSegment();
-  const pathname = usePathname();
   const path = segment ? `/${segment}` : "/";
 
-  useEffect(() => {
-    setIsNavOpen(false);
-  }, [pathname]);
-
   return (
-    <header className="pt-6">
+    <header className="fixed right-0 bottom-0 left-0 z-10 pb-6">
       <Container>
         <nav
-          className={cx(
-            isNavOpen
-              ? "flex"
-              : "hidden auto-cols-max sm:grid sm:grid-flow-col sm:gap-8",
-            "flex-col gap-4",
-          )}
+          className="mx-auto mb-4 flex w-fit gap-2 rounded-full p-[5px] backdrop-blur-md"
+          style={{ background: "linear-gradient(#ffffffb3 0%,#ffffff8c 100%)" }}
         >
           {Object.entries(MENU).map(([key, value]) => {
             const isActive = key === path;
@@ -42,8 +30,10 @@ export default function Header() {
                 key={key}
                 href={key}
                 className={cx(
-                  "hover:opacity-100",
-                  isActive ? "text-orange-500 !no-underline" : "",
+                  "w-auto rounded-full p-2 text-center text-xs font-semibold sm:px-4 sm:py-2 md:text-sm",
+                  isActive
+                    ? "bg-orange-500 text-white !no-underline hover:!text-white"
+                    : "hover:bg-orange-100",
                 )}
               >
                 {value}
@@ -51,19 +41,6 @@ export default function Header() {
             );
           })}
         </nav>
-
-        {!isNavOpen && (
-          <button
-            type="button"
-            className="flex items-center gap-1 opacity-60 select-none sm:hidden"
-            onClick={() => {
-              setIsNavOpen(true);
-            }}
-          >
-            {MENU[path as keyof typeof MENU]}
-            <IconSelector stroke={2} size={16} className="opacity-60" />
-          </button>
-        )}
       </Container>
     </header>
   );
