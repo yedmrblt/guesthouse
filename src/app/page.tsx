@@ -1,6 +1,8 @@
 import { Social, SocialButton } from "@/components/social";
 import Container from "@/components/container";
 import { SOCIAL } from "@/lib/const";
+import Image from "next/image";
+import { Badge } from "@/components/badge";
 import { IconBrandInstagram, IconBrandX } from "@tabler/icons-react";
 
 export default function Index() {
@@ -8,7 +10,7 @@ export default function Index() {
     <>
       <Container className="space-y-8" size="large">
         <header>
-          <h1 className="text-mute font-display pb-3 text-4xl font-semibold">
+          <h1 className="text-mute font-display pb-3 text-3xl font-semibold sm:text-4xl">
             Emre Demirbulut
           </h1>
           <h2 className="font-display text-3xl font-bold text-balance sm:text-4xl">
@@ -127,6 +129,104 @@ export default function Index() {
             <IconBrandX stroke={1.5} size={24} />
           </SocialButton>
         </Social>
+
+        <div className="rounded-4xl bg-stone-200 p-6 md:p-12">
+          <div className="grid grid-cols-1">
+            <Image
+              src="/photos/works/deplog/deplog_website.png"
+              width={1067}
+              height={826}
+              alt="Deplog website"
+            />
+          </div>
+          <div className="mt-4 flex flex-col gap-0 md:mt-12">
+            <h2 className="pb-0 text-sm font-bold">Deplog</h2>
+            <span className="text-mute text-sm font-medium">
+              Website, Web App
+            </span>
+            <div className="space-x-1">
+              <Badge>TYPESCRIPT</Badge>
+              <Badge>REACT</Badge>
+              <Badge>NEXT</Badge>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative rounded-4xl bg-stone-200">
+          <video
+            src="./photos/works/deplog/deplog.mp4"
+            autoPlay
+            muted
+            loop
+            preload="none"
+            className="w-100 h-100 top-0 left-0 rounded-4xl object-cover"
+          />
+          <div className="absolute bottom-6 left-6 z-1 flex flex-col gap-0 md:bottom-12 md:left-12">
+            <h2 className="pb-0 text-sm font-bold text-white">Deplog</h2>
+            <span className="text-sm font-medium text-zinc-300">
+              Personal Project, MacOS
+            </span>
+            <div className="space-x-1">
+              <Badge>SWIFT UI</Badge>
+            </div>
+          </div>
+        </div>
+
+        <div className="rounded-4xl bg-stone-200 p-6 md:p-12">
+          <div className="grid grid-cols-3 gap-10">
+            <Image
+              src="/photos/works/tuimm/tuimm_1.png"
+              width={329}
+              height={648}
+              alt="TUI Musement booking form"
+            />
+            <Image
+              src="/photos/works/tuimm/tuimm_2.png"
+              width={329}
+              height={648}
+              alt="TUI Musement booking form pickup point selection secreen"
+            />
+            <Image
+              src="/photos/works/tuimm/tuimm_3.png"
+              width={329}
+              height={648}
+              alt="TUI Musement booking form cart confirmation screen"
+            />
+          </div>
+          <div className="mt-4 flex flex-col gap-0 md:mt-12">
+            <h2 className="pb-0 text-sm font-bold">TUI Musement</h2>
+            <span className="text-mute text-sm font-medium">
+              Booking Form, Web App
+            </span>
+            <div className="space-x-1">
+              <Badge>TYPESCRIPT</Badge>
+              <Badge>VUE.JS</Badge>
+              <Badge>NUXT</Badge>
+            </div>
+          </div>
+        </div>
+
+        <div className="rounded-4xl bg-stone-200 p-6 md:p-12">
+          <div className="grid grid-cols-1">
+            <Image
+              src="/photos/works/tuimm/tuimm_4.png"
+              width={1067}
+              height={826}
+              alt="TUI Musement checkout page"
+            />
+          </div>
+          <div className="mt-4 flex flex-col gap-0 md:mt-12">
+            <h2 className="pb-0 text-sm font-bold">TUI Musement</h2>
+            <span className="text-mute text-sm font-medium">
+              Checkout, Web App
+            </span>
+            <div className="space-x-1">
+              <Badge>TYPESCRIPT</Badge>
+              <Badge>VUE.JS</Badge>
+              <Badge>NUXT</Badge>
+            </div>
+          </div>
+        </div>
       </Container>
     </>
   );
